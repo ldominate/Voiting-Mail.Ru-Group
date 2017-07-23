@@ -1,3 +1,4 @@
+/* @flow */
 import {expect} from 'chai';
 import {List, Map} from 'immutable';
 
@@ -43,6 +44,7 @@ describe('immutability', () => {
 		// function addMovie(currentState: Map, movie){
 		// 	return currentState.set('movies', currentState.get('movies').push(movie));
 		// }
+		
 		
 		function addMovie(currentState: Map, movie){
 			return currentState.update('movies', movies => movies.push(movie));
